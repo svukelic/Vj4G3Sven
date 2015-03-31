@@ -16,5 +16,12 @@ namespace Vj4G3Sven
         {
             InitializeComponent();
         }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            Random tmp = new Random();
+
+            button1.Location = new Point(tmp.Next(1, 200), tmp.Next(1, 200));
+        }
     }
 }
